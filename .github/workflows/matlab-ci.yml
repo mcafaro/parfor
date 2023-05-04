@@ -40,7 +40,7 @@ jobs:
       - name: Run function using parfor
         uses: matlab-actions/run-command@v1
         with:
-          command: addpath('src'); somefun(1:10)
+          command: parpool('threads'); addpath('src'); somefun(1:10)
           
           
           
