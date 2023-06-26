@@ -40,7 +40,7 @@ jobs:
       - name: Run function using parfor
         uses: matlab-actions/run-command@v1
         with:
-          command: parfor i = 1:n; i; end
+          command: parfor i = 1:10; i; end
           
           
           
